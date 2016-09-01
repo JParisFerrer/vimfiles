@@ -58,8 +58,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
-behave mswin
+"source $VIMRUNTIME/mswin.vim
+" behave mswin
 
 filetype plugin indent on       " Enable filetype plugins and indent rules
 syntax enable                   " Enable syntax highlighting
