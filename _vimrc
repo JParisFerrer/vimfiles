@@ -43,6 +43,8 @@ Plugin 'valloric/youcompleteme'
 
 Plugin 'vim-scripts/sessionman.vim'
 
+Plugin 'hauleth/sad.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
