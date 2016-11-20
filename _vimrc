@@ -61,7 +61,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
-" behave mswin
+
+nmap <leader>s <Plug>(sad-change-movement-forward)
+nmap <leader>S <Plug>(sad-change-movement-backward) behave mswin
 
 filetype plugin indent on       " Enable filetype plugins and indent rules
 syntax enable                   " Enable syntax highlighting
@@ -80,9 +82,12 @@ set cursorline                  " Highlight line cursor is on
 
 " adds :FoldAll command that folds all functions
 command FoldAll :%g/^\( \)*{/normal! zf%
+command FixBraces :%g/\v[a-zA-Z0-9:_\(\) ]+\{$/exe "normal! $i\<CR>\<ESC>"
 
 set nohidden
 set autochdir
+
+set scrolloff=10
 
 " removes the really annoying behavior of auto extending comment on new line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
