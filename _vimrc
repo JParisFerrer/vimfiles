@@ -62,8 +62,8 @@ filetype plugin indent on    " required
 source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 
-nmap <leader>s <Plug>(sad-change-movement-forward)
-nmap <leader>S <Plug>(sad-change-movement-backward)
+nmap s <Plug>(sad-change-forward)
+nmap S <Plug>(sad-change-backward)
 
 filetype plugin indent on       " Enable filetype plugins and indent rules
 syntax enable                   " Enable syntax highlighting
