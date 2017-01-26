@@ -82,7 +82,7 @@ set cursorline                  " Highlight line cursor is on
 
 " adds :FoldAll command that folds all functions
 command FoldAll :%g/^\( \)*{/normal! zf%
-command FixBraces :%g/\v[a-zA-Z0-9:_\(\) ]+\{$/exe "normal! $i\<CR>\<ESC>"
+command FixBraces :%g/\v[a-zA-Z0-9\*:_\(\) ]+\{[ ]*$/exe "normal! $F{i\<CR>\<ESC>"
 
 set nohidden
 set autochdir
